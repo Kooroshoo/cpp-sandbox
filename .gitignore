@@ -1,0 +1,54 @@
+# CMake build directories
+*/build/
+*/build-*/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# Executables and object files
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# CLion settings
+.idea/
+
+# Compiled source
+*.com
+*.class
+
+# Logs and debug
+*.log
+*.pch
+*.pdb
+*.idb
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Other
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
