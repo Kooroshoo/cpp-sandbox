@@ -54,3 +54,25 @@ sudo apt-get install curl zip unzip tar
 sudo apt-get install graphviz
 
 ```
+
+## Build Instructions
+
+```bash
+# 0. Create your C++ source files and a CMakeLists.txt in the project directory
+
+# 1. Create a build directory
+mkdir build
+
+# 2. Navigate into it
+cd build
+
+# 3. Generate the build system (configure the project)
+cmake ..
+
+# 4. Build the project
+cmake --build .
+
+# 5. Run the executable
+./ExecutableName  # Replace with your actual output binary
+
+```
