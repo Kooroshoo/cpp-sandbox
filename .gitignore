@@ -1,6 +1,7 @@
 # CMake build directories
 */build/
 */build-*/
+*/compile_commands.json
 
 # CMake files
 CMakeCache.txt
