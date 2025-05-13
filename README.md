@@ -6,7 +6,7 @@ A personal sandbox for experimenting with modern and advanced C++ concepts — f
 
 This repository is a curated collection of C++ examples, mini-projects, and experiments built to explore:
 
-- **CMake, Tests, and Tooling**
+- **CMake, Tests, and Tools**
 - **Data Structures & Algorithms**
 - **Memory Management (Smart Pointers, RAII)**
 - **Modern C++ Features (C++11, C++14, C++17, C++20)**
@@ -19,9 +19,7 @@ This repository is a curated collection of C++ examples, mini-projects, and expe
 
 ```plaintext
 cpp-sandbox/
-├── cmake/              # CMake configs, toolchains, and scripts
-├── tests/              # Unit tests and testing setups
-├── tooling/            # Build system tooling, scripts, etc.
+├── cmake/              # CMake, Tests, and Tools
 ├── dsa/                # Data structures and algorithms implementations
 ├── memory-management/  # Smart pointers, RAII, and memory handling examples
 ├── modern-cpp/         # Modern C++ features (C++11, C++14, C++17, C++20)
