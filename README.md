@@ -58,21 +58,21 @@ sudo apt-get install graphviz
 ## Build Instructions
 
 ```bash
-# 0. Create your C++ source files and a CMakeLists.txt in the project directory
+# 1. Create build dir (if not done)
+mkdir -p build
 
-# 1. Create a build directory
-mkdir build
-
-# 2. Navigate into it
+# 2. Go into it
 cd build
 
-# 3. Generate the build system (configure the project)
-cmake ..
+# 3. Configure with compile_commands.json support
+cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
-# 4. Build the project
+# 4. Build it
 cmake --build .
 
-# 5. Run the executable
-./ExecutableName  # Replace with your actual output binary
+# 5. (Optional) Link the compile_commands.json for IntelliSense
+cd ..
+ln -sf build/compile_commands.json compile_commands.json
+
 
 ```
