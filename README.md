@@ -19,7 +19,7 @@ This repository is a curated collection of C++ examples, mini-projects, and expe
 
 ```plaintext
 cpp-sandbox/
-├── cmake/              # CMake, Tests, and Documentation
+├── cmake/              # CMake, tests, and documentation
 ├── dsa/                # Data structures and algorithms implementations
 ├── memory-management/  # Smart pointers, RAII, and memory handling examples
 ├── modern-cpp/         # Modern C++ features (C++11, C++14, C++17, C++20)
