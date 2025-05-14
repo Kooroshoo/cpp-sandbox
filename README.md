@@ -48,21 +48,9 @@ sudo apt-get install python3 python3-pip
 ## Build Instructions
 
 ```bash
-# 1. Create build dir (if not done)
-mkdir -p build
-
-# 2. Go into it
+mkdir build
 cd build
-
-# 3. Configure with compile_commands.json support
-cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-
-# 4. Build it
+cmake ..
 cmake --build .
-
-# 5. (Optional) Link the compile_commands.json for IntelliSense
-cd ..
-ln -sf build/compile_commands.json compile_commands.json
-
 
 ```
