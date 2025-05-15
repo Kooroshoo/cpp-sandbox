@@ -29,9 +29,13 @@ public:
     bool insert(int index, int value);
     void deleteNode(int index);
     void reverse();
-    void getHead();
-    void getTail();
-    void getLength();
     void printList();
+
+    Node* getHead();
+    Node* getTail();
+    int getLength();
+    Node* findMiddleNode();
+    bool hasLoop();
+    Node* findKthFromEnd(int k);
 
 };
