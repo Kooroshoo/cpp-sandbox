@@ -157,16 +157,55 @@ void LinkedList::reverse() {
     }
 }
 
-void LinkedList::getHead() {
-    std::cout << "Head: " << head->value << std::endl;
+Node* LinkedList::findMiddleNode() {
+    Node* slow = head;
+    Node* fast = head;
+
+    while (fast && fast->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    return slow;
 }
 
-void LinkedList::getTail() {
-    std::cout << "Tail: " << tail->value << std::endl;
+bool LinkedList::hasLoop() {
+    Node* slow = head;
+    Node* fast = head;
+
+    while (fast && fast->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+
+        if (slow == fast) return true;
+    }
+
+    return false;
 }
 
-void LinkedList::getLength() {
-    std::cout << "Length: " << length << std::endl;
+Node* LinkedList::findKthFromEnd(int k) {
+    Node* slow = head;
+    Node* fast = head;
+    for (int i = 0; i < k; ++i) {
+        if (fast == nullptr) return nullptr;
+        fast = fast->next;
+    }
+    while (fast != nullptr) {
+        slow = slow->next;
+        fast = fast->next;
+    }
+    return slow;
+}
+
+Node* LinkedList::getHead() {
+    return head;
+}
+
+Node* LinkedList::getTail() {
+    return tail;
+}
+
+int LinkedList::getLength() {
+    return length;
 }
 
 void LinkedList::printList() {
