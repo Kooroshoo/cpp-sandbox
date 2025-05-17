@@ -10,6 +10,7 @@ This repository is a curated collection of C++ examples, mini-projects, and expe
 - **Data Structures & Algorithms**
 - **Memory Management (Smart Pointers, RAII)**
 - **Modern C++ Features (C++11, C++14, C++17, C++20)**
+- **Miscellaneous Topics (Interfaces, Delegates, Async Functions, etc.)**
 - **Design Patterns**
 - **Multithreading & Concurrency**
 - **Networking (Sockets, UDP/TCP)**
@@ -23,6 +24,7 @@ cpp-sandbox/
 ├── dsa/                # Data structures and algorithms implementations
 ├── memory-management/  # Smart pointers, RAII, and memory handling examples
 ├── modern-cpp/         # Modern C++ features (C++11, C++14, C++17, C++20)
+├── misc/               # Miscellaneous topics: interfaces, delegates, async functions, etc.
 ├── patterns/           # Design pattern implementations
 ├── threading/          # Multithreading & concurrency examples (std::thread, std::async, etc.)
 ├── networking/         # Networking examples (sockets, UDP/TCP)
